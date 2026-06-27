@@ -1,0 +1,220 @@
+/* ===========================
+   Employer Dashboard
+=========================== */
+
+.content{
+    flex:1;
+    padding:30px;
+    background:#f4f7f9;
+    min-height:100vh;
+}
+
+/* Topbar */
+
+.topbar{
+    background:#fff;
+    border-radius:15px;
+    padding:20px 30px;
+    margin-bottom:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.topbar h2{
+    color:#1B5E20;
+    margin-bottom:5px;
+}
+
+.topbar p{
+    color:#666;
+}
+
+.profile{
+    background:#1B5E20;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:600;
+}
+
+/* Cards */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-bottom:35px;
+
+}
+
+.card{
+
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #FFC107;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icon{
+
+    font-size:42px;
+    margin-bottom:15px;
+
+}
+
+.card h4{
+
+    color:#555;
+    margin-bottom:10px;
+    font-size:18px;
+
+}
+
+.card h1{
+
+    color:#1B5E20;
+    font-size:42px;
+
+}
+
+/* Quick Actions */
+
+.quick-actions{
+
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
+
+}
+
+.quick-actions h3{
+
+    color:#1B5E20;
+    margin-bottom:20px;
+
+}
+
+.action-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+
+}
+
+.action-card{
+
+    text-decoration:none;
+    background:#f8f9fa;
+    border:2px solid transparent;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    color:#1B5E20;
+    font-weight:bold;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+.action-card:hover{
+
+    background:#1B5E20;
+    color:#FFC107;
+    border-color:#FFC107;
+    transform:translateY(-5px);
+
+}
+
+.action-card span{
+
+    display:block;
+    margin-top:10px;
+
+}
+
+/* Welcome */
+
+.welcome-box{
+
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.welcome-box h3{
+
+    color:#1B5E20;
+    margin-bottom:15px;
+
+}
+
+.welcome-box p{
+
+    color:#555;
+    line-height:28px;
+    font-size:17px;
+
+}
+
+.startBtn{
+
+    display:inline-block;
+    margin-top:20px;
+    background:#1B5E20;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.startBtn:hover{
+
+    background:#FFC107;
+    color:#1B5E20;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.action-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.topbar{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+}

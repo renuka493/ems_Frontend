@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            👥
+        </div>
+
+        <div class="logo-text">
+
+            <div class="logo-title">
+
+                <span class="e">E</span>
+                <span class="m">M</span>
+                <span class="s">S</span>
+
+            </div>
+
+            <div class="logo-sub">
+
+                Employee Management System
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <h2>Welcome Back 👋</h2>
+
+        <p>
+
+            Login to access your Employee Management Dashboard
+
+        </p>
+
+        <input
+                type="text"
+                id="username"
+                placeholder="Enter Username">
+
+        <input
+                type="password"
+                id="password"
+                placeholder="Enter Password">
+
+        <div class="show-password">
+
+            <input
+                    type="checkbox"
+                    id="showPassword"
+                    onclick="togglePassword()">
+
+            <label for="showPassword">
+
+                Show Password
+
+            </label>
+
+        </div>
+
+        <button id="loginBtn">
+
+            Login
+
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<footer>
+
+    © 2026 Employee Management System | All Rights Reserved
+
+</footer>
+
+<script src="../js/login.js"></script>
+
+</body>
+
+</html>

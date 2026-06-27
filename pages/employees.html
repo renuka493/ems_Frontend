@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/employees.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">👥</div>
+
+            <div class="logo-text">
+                <div class="logo-title">
+                    <span class="e">E</span><span class="m">M</span><span class="s">S</span>
+                </div>
+                <div class="logo-sub">
+                    Employee Management System
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Employer Portal</h3>
+
+        <ul>
+            <li><a href="employerdashboard.html">🏠 Dashboard</a></li>
+            <li><a href="employees.html">👥 Employees</a></li>
+            <li><a href="attendence.html">📅 Attendance</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+                <h2>Employee Management</h2>
+                <p>Add, Update and Manage Employee Records</p>
+            </div>
+
+            <div class="profile">
+                👤 Administrator
+            </div>
+
+        </header>
+
+        <!-- Employee Form -->
+
+        <section class="employee-form">
+
+            <h3>Add Employee</h3>
+
+            <div class="form-grid">
+
+                <input
+                    type="text"
+                    id="empName"
+                    placeholder="Employee Name">
+
+                <input
+                    type="email"
+                    id="empEmail"
+                    placeholder="Email Address">
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department">
+
+                <input
+                    type="number"
+                    id="salary"
+                    placeholder="Salary">
+
+            </div>
+
+            <button id="addEmployeeBtn">
+                Add Employee
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+        <!-- Employee Table -->
+
+        <section class="employee-table">
+
+            <div class="table-header">
+
+                <h3>Employee List</h3>
+
+                <input
+                    type="text"
+                    placeholder="Search Employee">
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="employeeTableBody">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+
+    © 2026 Employee Management System | All Rights Reserved
+
+</footer>
+
+<script src="../js/common.js"></script>
+<script src="../js/employees.js"></script>
+
+</body>
+
+</html>

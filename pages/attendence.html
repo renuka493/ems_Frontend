@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/attendence.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">👥</div>
+
+            <div class="logo-text">
+
+                <div class="logo-title">
+                    <span class="e">E</span><span class="m">M</span><span class="s">S</span>
+                </div>
+
+                <div class="logo-sub">
+                    Employee Management System
+                </div>
+
+            </div>
+
+        </div>
+
+        <h3>Employer Portal</h3>
+
+        <ul>
+            <li><a href="employerdashboard.html">🏠 Dashboard</a></li>
+            <li><a href="employees.html">👥 Employees</a></li>
+            <li><a href="attendence.html">📅 Attendance</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+                <h2>Attendance Management</h2>
+                <p>Mark and Monitor Employee Attendance</p>
+            </div>
+
+            <div class="profile">
+                👤 Administrator
+            </div>
+
+        </header>
+
+        <!-- Mark Attendance -->
+
+        <section class="mark-section">
+
+            <h3>Mark Today's Attendance</h3>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>S.No</th>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Status</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="attendenceTableBody">
+
+                </tbody>
+
+            </table>
+
+            <br>
+
+            <button id="saveAttendenceBtn">
+                Save Attendance
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+        <br><br>
+
+        <!-- Saved Attendance -->
+
+        <section class="saved-section">
+
+            <h3>Today's Attendance Records</h3>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>S.No</th>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Status</th>
+                    <th>Date</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="savedAttendenceBody">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+
+    © 2026 Employee Management System | All Rights Reserved
+
+</footer>
+
+<script src="../js/common.js"></script>
+<script src="../js/attendence.js"></script>
+
+</body>
+
+</html>

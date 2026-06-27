@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/employerdashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">👥</div>
+
+            <div class="logo-text">
+
+                <div class="logo-title">
+                    <span class="e">E</span><span class="m">M</span><span class="s">S</span>
+                </div>
+
+                <div class="logo-sub">
+                    Employee Management System
+                </div>
+
+            </div>
+
+        </div>
+
+        <h3>Employer Portal</h3>
+
+        <ul>
+            <li><a href="employerdashboard.html">🏠 Dashboard</a></li>
+            <li><a href="employees.html">👥 Employees</a></li>
+            <li><a href="attendence.html">📅 Attendance</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+            <li><a href="#" onclick="logout()">🚪 Logout</a></li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <header class="topbar">
+
+            <div>
+                <h2>Employer Dashboard</h2>
+                <p>Welcome to Employee Management System</p>
+            </div>
+
+            <div class="profile">
+                👤 Administrator
+            </div>
+
+        </header>
+
+        <!-- Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+                <div class="icon">👥</div>
+                <h3>Total Employees</h3>
+                <p id="totalEmployees">0</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Today's Date</h3>
+                <p id="todayDate"></p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🟢</div>
+                <h3>System Status</h3>
+                <p>Online</p>
+            </div>
+
+        </section>
+
+        <!-- Welcome -->
+
+        <section class="welcome-box">
+
+            <h2>Welcome Administrator 👋</h2>
+
+            <p>
+
+                Manage employees, attendance and reports
+                efficiently through one centralized dashboard.
+
+            </p>
+
+            <a href="employees.html" class="startBtn">
+
+                Manage Employees →
+
+            </a>
+
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+
+    © 2026 Employee Management System | All Rights Reserved
+
+</footer>
+
+<script src="../js/common.js"></script>
+<script src="../js/employerdashboard.js"></script>
+
+</body>
+
+</html>

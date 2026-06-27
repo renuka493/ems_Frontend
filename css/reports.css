@@ -1,0 +1,110 @@
+/* ===================================
+   REPORTS PAGE
+=================================== */
+
+.content{
+    flex:1;
+    padding:30px;
+    background:#f4f7fb;
+}
+
+/* Header */
+
+.topbar{
+    background:#fff;
+    padding:20px 30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.topbar h2{
+    color:#1B5E20;
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.topbar p{
+    color:#666;
+    font-size:15px;
+}
+
+/* Dashboard Cards */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+.card{
+
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    border-top:6px solid #FFC107;
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card h3{
+
+    color:#1B5E20;
+    margin-bottom:20px;
+    font-size:22px;
+
+}
+
+.card p{
+
+    font-size:42px;
+    font-weight:bold;
+    color:#2E7D32;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.content{
+
+padding:15px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.topbar h2{
+
+font-size:24px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+.card p{
+
+font-size:34px;
+
+}
+
+}
